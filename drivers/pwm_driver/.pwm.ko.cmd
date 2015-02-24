@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/BBB_eqep_pwm/drivers/pwm_driver/pwm.ko := ld -EL -r  -T /usr/src/linux-3.14.33-ti-r51/scripts/module-common.lds --build-id  -o /home/ubuntu/BBB_eqep_pwm/drivers/pwm_driver/pwm.ko /home/ubuntu/BBB_eqep_pwm/drivers/pwm_driver/pwm.o /home/ubuntu/BBB_eqep_pwm/drivers/pwm_driver/pwm.mod.o
