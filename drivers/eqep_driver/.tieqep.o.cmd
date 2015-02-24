@@ -1,8 +1,8 @@
-cmd_/home/ubuntu/eqep_driver/tieqep.o := gcc -Wp,-MD,/home/ubuntu/eqep_driver/.tieqep.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabihf/4.8/include -I/usr/src/linux-3.14.33-ti-r51/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/usr/src/linux-3.14.33-ti-r51/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/usr/src/linux-3.14.33-ti-r51/include/uapi -Iinclude/generated/uapi -include /usr/src/linux-3.14.33-ti-r51/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -mfpu=vfp -marm -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fstack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -DCC_HAVE_ASM_GOTO  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(tieqep)"  -D"KBUILD_MODNAME=KBUILD_STR(tieqep)" -c -o /home/ubuntu/eqep_driver/.tmp_tieqep.o /home/ubuntu/eqep_driver/tieqep.c
+cmd_/home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.o := gcc -Wp,-MD,/home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/.tieqep.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabihf/4.8/include -I/usr/src/linux-3.14.33-ti-r51/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/usr/src/linux-3.14.33-ti-r51/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/usr/src/linux-3.14.33-ti-r51/include/uapi -Iinclude/generated/uapi -include /usr/src/linux-3.14.33-ti-r51/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -mfpu=vfp -marm -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fstack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -DCC_HAVE_ASM_GOTO  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(tieqep)"  -D"KBUILD_MODNAME=KBUILD_STR(tieqep)" -c -o /home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/.tmp_tieqep.o /home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.c
 
-source_/home/ubuntu/eqep_driver/tieqep.o := /home/ubuntu/eqep_driver/tieqep.c
+source_/home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.o := /home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.c
 
-deps_/home/ubuntu/eqep_driver/tieqep.o := \
+deps_/home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.o := \
   include/linux/module.h \
     $(wildcard include/config/sysfs.h) \
     $(wildcard include/config/modules.h) \
@@ -586,6 +586,6 @@ deps_/home/ubuntu/eqep_driver/tieqep.o := \
   /usr/src/linux-3.14.33-ti-r51/drivers/pwm/pwm-tipwmss.h \
     $(wildcard include/config/pwm/tipwmss.h) \
 
-/home/ubuntu/eqep_driver/tieqep.o: $(deps_/home/ubuntu/eqep_driver/tieqep.o)
+/home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.o: $(deps_/home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.o)
 
-$(deps_/home/ubuntu/eqep_driver/tieqep.o):
+$(deps_/home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.o):
