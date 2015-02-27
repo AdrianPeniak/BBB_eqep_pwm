@@ -7,5 +7,5 @@ cd dtb-rebuilder
 make
 make install
 
-echo "ADD dtb=am335x-beaglebone-cape-bone-robot.dtb TO THE uENV.TXT FILE in /boot/"
+NEED TO ADD THE LINE TO THE UENV.TXT FILE
 

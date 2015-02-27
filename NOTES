@@ -1,4 +1,0 @@
-modify /etc/sudoers
-  <username> ALL=(ALL) NOPASSWD:ALL
-
-

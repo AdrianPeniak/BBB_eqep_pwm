@@ -12,9 +12,6 @@ https://github.com/Teknoman117/beaglebot
 https://github.com/cdsteinkuehler/beaglebone-universal-io.git
 https://github.com/yigityuce/BlackLib
 
-modify /etc/sudoers
-  <username> ALL=(ALL) NOPASSWD:ALL
-
 //////////////////////////////////////////
 If you want to get things working on your own or do not have a similiar setup using eqep2b and pwm on pin p8_19 then use the steps below to understand and change the files necessary.
 
