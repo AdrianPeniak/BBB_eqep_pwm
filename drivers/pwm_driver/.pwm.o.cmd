@@ -1,9 +1,8 @@
-cmd_/home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.mod.o := gcc -Wp,-MD,/home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/.tieqep.mod.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabihf/4.8/include -I/usr/src/linux-3.14.33-ti-r51/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/usr/src/linux-3.14.33-ti-r51/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/usr/src/linux-3.14.33-ti-r51/include/uapi -Iinclude/generated/uapi -include /usr/src/linux-3.14.33-ti-r51/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -mfpu=vfp -marm -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fstack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -DCC_HAVE_ASM_GOTO  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(tieqep.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(tieqep)" -DMODULE  -c -o /home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.mod.o /home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.mod.c
+cmd_/home/ubuntu/BBB_eqep_pwm/drivers/pwm_driver/pwm.o := gcc -Wp,-MD,/home/ubuntu/BBB_eqep_pwm/drivers/pwm_driver/.pwm.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabihf/4.8/include -I/usr/src/linux-3.14.33-ti-r51/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/usr/src/linux-3.14.33-ti-r51/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/usr/src/linux-3.14.33-ti-r51/include/uapi -Iinclude/generated/uapi -include /usr/src/linux-3.14.33-ti-r51/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -mfpu=vfp -marm -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fstack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -DCC_HAVE_ASM_GOTO  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(pwm)"  -D"KBUILD_MODNAME=KBUILD_STR(pwm)" -c -o /home/ubuntu/BBB_eqep_pwm/drivers/pwm_driver/.tmp_pwm.o /home/ubuntu/BBB_eqep_pwm/drivers/pwm_driver/pwm.c
 
-source_/home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.mod.o := /home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.mod.c
+source_/home/ubuntu/BBB_eqep_pwm/drivers/pwm_driver/pwm.o := /home/ubuntu/BBB_eqep_pwm/drivers/pwm_driver/pwm.c
 
-deps_/home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.mod.o := \
-    $(wildcard include/config/module/unload.h) \
+deps_/home/ubuntu/BBB_eqep_pwm/drivers/pwm_driver/pwm.o := \
   include/linux/module.h \
     $(wildcard include/config/sysfs.h) \
     $(wildcard include/config/modules.h) \
@@ -16,6 +15,7 @@ deps_/home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.mod.o := \
     $(wildcard include/config/tracing.h) \
     $(wildcard include/config/event/tracing.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
+    $(wildcard include/config/module/unload.h) \
     $(wildcard include/config/constructors.h) \
     $(wildcard include/config/debug/set/module/ronx.h) \
   include/linux/list.h \
@@ -429,9 +429,92 @@ deps_/home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.mod.o := \
     $(wildcard include/config/have/mod/arch/specific.h) \
     $(wildcard include/config/modules/use/elf/rel.h) \
     $(wildcard include/config/modules/use/elf/rela.h) \
-  include/linux/vermagic.h \
-  include/generated/utsrelease.h \
+  include/linux/platform_device.h \
+    $(wildcard include/config/suspend.h) \
+    $(wildcard include/config/hibernate/callbacks.h) \
+  include/linux/device.h \
+    $(wildcard include/config/debug/devres.h) \
+    $(wildcard include/config/acpi.h) \
+    $(wildcard include/config/pinctrl.h) \
+    $(wildcard include/config/dma/cma.h) \
+    $(wildcard include/config/devtmpfs.h) \
+    $(wildcard include/config/sysfs/deprecated.h) \
+  include/linux/ioport.h \
+  include/linux/klist.h \
+  include/linux/pinctrl/devinfo.h \
+    $(wildcard include/config/pm.h) \
+  include/linux/pinctrl/consumer.h \
+  include/linux/seq_file.h \
+  include/linux/pinctrl/pinctrl-state.h \
+  include/linux/pm.h \
+    $(wildcard include/config/vt/console/sleep.h) \
+    $(wildcard include/config/pm/runtime.h) \
+    $(wildcard include/config/pm/clk.h) \
+    $(wildcard include/config/pm/generic/domains.h) \
+  include/linux/ratelimit.h \
+  /usr/src/linux-3.14.33-ti-r51/arch/arm/include/asm/device.h \
+    $(wildcard include/config/dmabounce.h) \
+    $(wildcard include/config/iommu/api.h) \
+    $(wildcard include/config/arm/dma/use/iommu.h) \
+    $(wildcard include/config/arch/omap.h) \
+  include/linux/pm_wakeup.h \
+  include/linux/mod_devicetable.h \
+  include/linux/uuid.h \
+  include/uapi/linux/uuid.h \
+  include/linux/pwm.h \
+    $(wildcard include/config/pwm.h) \
+    $(wildcard include/config/have/pwm.h) \
+    $(wildcard include/config/debug/fs.h) \
+    $(wildcard include/config/pwm/sysfs.h) \
+  include/linux/of.h \
+    $(wildcard include/config/sparc.h) \
+    $(wildcard include/config/of/dynamic.h) \
+    $(wildcard include/config/of.h) \
+    $(wildcard include/config/attach/node.h) \
+    $(wildcard include/config/detach/node.h) \
+    $(wildcard include/config/add/property.h) \
+    $(wildcard include/config/remove/property.h) \
+    $(wildcard include/config/update/property.h) \
+    $(wildcard include/config/proc/fs.h) \
+    $(wildcard include/config/proc/devicetree.h) \
+  include/linux/slab.h \
+    $(wildcard include/config/slab/debug.h) \
+    $(wildcard include/config/kmemcheck.h) \
+    $(wildcard include/config/failslab.h) \
+    $(wildcard include/config/slob.h) \
+    $(wildcard include/config/slab.h) \
+    $(wildcard include/config/slub.h) \
+    $(wildcard include/config/debug/slab.h) \
+  include/linux/kmemleak.h \
+    $(wildcard include/config/debug/kmemleak.h) \
+  include/linux/slab_def.h \
+    $(wildcard include/config/memcg/kmem.h) \
+  include/linux/reciprocal_div.h \
+  include/linux/io.h \
+    $(wildcard include/config/has/ioport.h) \
+  /usr/src/linux-3.14.33-ti-r51/arch/arm/include/asm/io.h \
+    $(wildcard include/config/need/mach/io/h.h) \
+    $(wildcard include/config/pci.h) \
+    $(wildcard include/config/pcmcia/soc/common.h) \
+    $(wildcard include/config/isa.h) \
+    $(wildcard include/config/pccard.h) \
+  include/linux/blk_types.h \
+    $(wildcard include/config/block.h) \
+    $(wildcard include/config/blk/cgroup.h) \
+    $(wildcard include/config/blk/dev/integrity.h) \
+  include/asm-generic/pci_iomap.h \
+    $(wildcard include/config/no/generic/pci/ioport/map.h) \
+    $(wildcard include/config/generic/pci/iomap.h) \
+  include/xen/xen.h \
+    $(wildcard include/config/xen.h) \
+    $(wildcard include/config/xen/dom0.h) \
+    $(wildcard include/config/xen/pvh.h) \
+  include/linux/clk.h \
+    $(wildcard include/config/common/clk.h) \
+    $(wildcard include/config/have/clk/prepare.h) \
+    $(wildcard include/config/have/clk.h) \
+  include/linux/pm_runtime.h \
 
-/home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.mod.o: $(deps_/home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.mod.o)
+/home/ubuntu/BBB_eqep_pwm/drivers/pwm_driver/pwm.o: $(deps_/home/ubuntu/BBB_eqep_pwm/drivers/pwm_driver/pwm.o)
 
-$(deps_/home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.mod.o):
+$(deps_/home/ubuntu/BBB_eqep_pwm/drivers/pwm_driver/pwm.o):

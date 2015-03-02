@@ -1,1 +1,1 @@
-cmd_/home/ubuntu/eqep_driver/tieqep.ko := ld -EL -r  -T /usr/src/linux-3.14.33-ti-r51/scripts/module-common.lds --build-id  -o /home/ubuntu/eqep_driver/tieqep.ko /home/ubuntu/eqep_driver/tieqep.o /home/ubuntu/eqep_driver/tieqep.mod.o
+cmd_/home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.ko := ld -EL -r  -T /usr/src/linux-3.14.33-ti-r51/scripts/module-common.lds --build-id  -o /home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.ko /home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.o /home/ubuntu/BBB_eqep_pwm/drivers/eqep_driver/tieqep.mod.o

@@ -1,9 +1,16 @@
 chmod +x bb-get-rcn-kernel-source.sh
 sudo ./bb-get-rcn-kernel-source.sh
-cd eqep_driver
+<<<<<<< HEAD
+cd drivers/eqep_driver
 make
 insmod tieqep.ko
 cd ../pwm_driver
 make
 insmod pwm_test.ko
+cd ../..
+cp -r drivers/ /usr/local/.
+
+=======
+./make_drivers
+>>>>>>> 33d3ad226f258526fceee1dfb0af5c9f33b57f56
 
