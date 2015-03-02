@@ -4,7 +4,7 @@ I have only tested this for eQEP2b and PWM on pin P8_19. This should help get yo
 
 I was using kernel 3.14.33-ti-r51
 
-##Some useful websites:
+Some useful websites:
 https://www.mail-archive.com/beagleboard@googlegroups.com/msg19244.html 
 https://github.com/SaadAhmad/beaglebone-black-cpp-PWM
 http://dumb-looks-free.blogspot.fr/2014/06/beaglebone-black-bbb-kernal-headers.html
@@ -13,7 +13,7 @@ https://github.com/Teknoman117/beaglebot
 https://github.com/cdsteinkuehler/beaglebone-universal-io.git
 https://github.com/yigityuce/BlackLib
 
-###Setup option 1
+//////////////////////////////////////////
 If you want to get things working on your own or do not have a similiar setup using eqep2b and pwm on pin p8_19 then use the steps below to understand and change the files necessary.
 
 If you are using pwm on p8_19 and eqep2b and a beaglebone black you can use the script to get do the necessary steps.
@@ -24,8 +24,8 @@ then
 
 Then after every reboot run
   sudo ./start_drivers.sh
+//////////////////////////////////////////
 
-###Setup option 2
 First download the dtb-rebuilder:
   git clone https://github.com/RobertCNelson/dtb-rebuilder
   git checkout 3.14-ti

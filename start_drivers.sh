@@ -1,5 +1,5 @@
-cd eqep_driver
+cd /usr/local/drivers/eqep_driver
 insmod tieqep.ko
-cd ../pwm_driver
+cd /usr/local/drivers/pwm_driver
 insmod pwm_test.ko
 
